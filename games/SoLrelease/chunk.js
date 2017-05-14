@@ -184,13 +184,14 @@ function LoadedChunkStorage()
 		}
 		
 		g_chunkCount = tempFileNames.length;
+		alert("opened chunk manifest. " + tempFileNames.length + " chunks to be loaded");
 	}
 	
 	// A method to load the remaining chunks (one at a time).
 	this.LoadChunks = function()
 	{
 		// If we have no more chunks to load, return false.
-		if (tempFileNames.length <= 0) return false;
+		/*if (tempFileNames.length <= 0) return false;
 		
 		// Otherwise, load the next one, then remove it from the toload list.
 		try
@@ -257,7 +258,7 @@ function LoadedChunkStorage()
 			alert(e);
 		}
 		g_chunksLoaded++;
-		tempFileNames.splice(0,1);
+		tempFileNames.splice(0,1);//*/
 		return true;
 	}
 }
