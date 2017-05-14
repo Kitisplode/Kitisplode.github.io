@@ -190,7 +190,6 @@ function LoadedChunkStorage()
 	// A method to load the remaining chunks (one at a time).
 	this.LoadChunks = function()
 	{
-		return false;
 		// If we have no more chunks to load, return false.
 		if (tempFileNames.length <= 0) return false;
 		
