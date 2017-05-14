@@ -218,12 +218,12 @@ function LoadedChunkStorage()
 					// First line, read the chunk's difficulty level.
 					if (linecount == 0)
 					{
-						diff = parseInt(str_temp.substring(linestart, j - 1)) - 1;
+						diff = parseInt(str_temp.substring(linestart, j)) - 1;
 					}
 					// Second line, read the chunk's type.
 					else if (linecount == 1)
 					{
-						type = parseInt(str_temp.substring(linestart, j - 1));
+						type = parseInt(str_temp.substring(linestart, j));
 					}
 					// Any line after, read the chunk data.
 					else
