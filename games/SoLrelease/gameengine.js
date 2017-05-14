@@ -225,29 +225,6 @@ var dir_scripts =	"scripts/";
 var dir_songs =		"sounds/";
 var dir_sounds =	"sounds/";
 
-// Input variables.
-var mousePos =
-{
-	x: -1,
-	y: -1
-}
-var mouseInput = true;
-var mouseClick = true;
-var prevMouse = mouseClick;
-
-// Functions for checking the mouse state.
-function MouseClicked()
-{
-	if (mouseClick && !prevMouse) return true;
-	return false;
-}
-
-function MouseReleased()
-{
-	if (!mouseClick && prevMouse) return true;
-	return false;
-}
-
 // Gameobject array. Fill it with default, inactive objects first.
 
 var GameObjectArray = new Array();
@@ -484,82 +461,12 @@ function canvasApp()
 	
 	//infoBox.innerHTML = g_storage;
 	
-	// Canvas events:
-	canvas.addEventListener("mouseover", canvasGetMousePos, false);
-	canvas.addEventListener("mousemove", canvasGetMousePos, false);
-	canvas.addEventListener("mouseout", canvasGetMousePos, false);
-	canvas.addEventListener("mousedown", canvasMouseClick, false);
-	canvas.addEventListener("mouseup", canvasMouseUnclick, false);
-	
-	// Called to calculate the mouse position within the canvas.
-	function getMousePos(event)
-	{
-		var pos = findPos(canvas);
-		var mx = event.pageX - pos.x;
-		var my = event.pageY - pos.y;
-		return {
-			x: mx,
-			y: my
-		};
-	}
-	
 	var voidDark = 0;
 	var voidLight = 0;
 	
 	var subMenuOption = 0;
 	var menuLength = 2;
 	var controlsScreen = -1;
-	
-	// Function called when the mouse is within the canvas to find the mouse's position.
-	function canvasGetMousePos(event)
-	{
-		// If we're a mouse move event, get the position of the mouse inside the canvas.
-		if (event.type == "mousemove" || event.type == "mouseover")
-		{
-			mousePos = getMousePos(event);
-		}
-		// Otherwise, set the position of the mouse to -1.
-		else
-		{
-			mousePos = 
-			{
-				x: -1,
-				y: -1
-			};
-			// Also set the mouse input to false.
-			mouseInput = false;
-		}
-		// Write the current mouse position to the mouse text box.
-		//document.getElementById("mousepos").innerHTML = mousePos.x + ", " + mousePos.y;
-	}
-	
-	// The function called when the player clicks in the app.
-	function canvasMouseClick(event)
-	{
-		////debug.innerHTML += "<li>User clicked at " + mousePos.x + ", " + mousePos.y + "</li>";
-		// If we're on the title screen, go to the menu.
-		if (currentGameState == GAME_STATE_TITLE)
-		{
-			//switchGameState(GAME_STATE_MENU);
-		}
-		// If we're on the menu, allow the player to go into the game.
-		else if (currentGameState == GAME_STATE_MENU)
-		{
-			//switchGameState(g_start);
-		}
-		// If we're in the gameplay state, allow the mouse to interact with the gameobjects.
-		else if (currentGameState == GAME_STATE_GAME)
-		{
-		}//*/
-		
-		mouseInput = true;
-	}
-	
-	// The function called when the player releases the mouse in the app.
-	function canvasMouseUnclick(event)
-	{
-		mouseInput = false;
-	}
 	
 	function gameLoop()
 	{
@@ -1214,8 +1121,6 @@ function canvasApp()
 			}
 		}
 		
-		mouseClick = mouseInput;
-		
 		if (currentGameState == GAME_STATE_GAME && g_keyboard.KeyPressed(controls.pause) && g_transition == 1 && g_playerHP > 0)
 		{
 			g_pause = !g_pause;
@@ -1425,8 +1330,6 @@ function canvasApp()
 			
 			if (g_soundTest) DrawSoundTest();
 		}
-		
-		prevMouse = mouseInput;
 	}
 	
 	// Gamestate change handler method.
@@ -2205,16 +2108,6 @@ function canvasApp()
 	// Called during the game state.
 	function gsmGame()
 	{
-		
-		//infoBox.innerHTML = "tl: " + g_ChunkHandler.pointCheckCollision({x:mousePos.x + playerConstants.idleCollision.l, y:mousePos.y + playerConstants.idleCollision.t}) + " ";
-		//infoBox.innerHTML += "tr: " + g_ChunkHandler.pointCheckCollision({x:mousePos.x + playerConstants.idleCollision.l + playerConstants.idleCollision.w, y:mousePos.y + playerConstants.idleCollision.t}) + " ";
-		//infoBox.innerHTML += "bl: " + g_ChunkHandler.pointCheckCollision({x:mousePos.x + playerConstants.idleCollision.l, y:mousePos.y + playerConstants.idleCollision.t + playerConstants.idleCollision.h}) + " ";
-		//infoBox.innerHTML += "br: " + g_ChunkHandler.pointCheckCollision({x:mousePos.x + playerConstants.idleCollision.l + playerConstants.idleCollision.w, y:mousePos.y + playerConstants.idleCollision.t + playerConstants.idleCollision.h}) + " ";
-		
-		//AddLineToQueue({x:mousePos.x + playerConstants.idleCollision.l, y:mousePos.y + playerConstants.idleCollision.t}, {x:mousePos.x + playerConstants.idleCollision.l + playerConstants.idleCollision.w, y:mousePos.y + playerConstants.idleCollision.t + playerConstants.idleCollision.h}, "#ff0000", true, 10, -1);
-		//infoBox.innerHTML = g_ChunkHandler.rectCheckCollision(mousePos.x + playerConstants.idleCollision.l, mousePos.y + playerConstants.idleCollision.t, playerConstants.idleCollision.w, playerConstants.idleCollision.h);
-		//infoBox.innerHTML = g_ChunkHandler.pointCheckCollision({x:mousePos.x, y:mousePos.y}) + " at " + mousePos.x + ", " + mousePos.y;
-		
 		// Draw the hud.
 		var tempX = g_spriteCamera.x;
 		g_spriteCamera.x = 0;
