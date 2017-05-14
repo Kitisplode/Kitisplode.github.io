@@ -173,7 +173,7 @@ function LoadedChunkStorage()
 			{
 				if (str_temp.charAt(i) == '\n')
 				{
-					tempFileNames.push(str_temp.substring(linestart, i - 1));
+					tempFileNames.push(str_temp.substring(linestart, i - 0));
 					linestart = i + 1;
 				}
 			}
@@ -184,7 +184,7 @@ function LoadedChunkStorage()
 		}
 		
 		g_chunkCount = tempFileNames.length;
-		alert("opened chunk manifest. " + tempFileNames.length + " chunks to be loaded");
+		console.log("SoLGame: Opened chunk manifest. " + tempFileNames.length + " chunks to be loaded");
 	}
 	
 	// A method to load the remaining chunks (one at a time).
