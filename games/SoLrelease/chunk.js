@@ -197,7 +197,7 @@ function LoadedChunkStorage()
 		{
 			var str_temp;
 			var request = new XMLHttpRequest();
-			request.open('GET', "levels/" + tempFileNames[0] + ".tsr", false);
+			request.open('GET', "levels/" + tempFileNames[0] + ".txt", false);
 			request.send(null);
 			str_temp = request.responseText;
 			
