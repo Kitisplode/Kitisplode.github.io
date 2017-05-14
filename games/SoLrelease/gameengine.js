@@ -220,8 +220,8 @@ var g_fps = 30;
 var g_maxobjects = 512;
 
 // Directories for 
-var dir_sprites =	"Sprites/";
-var dir_scripts =	"Scripts/";
+var dir_sprites =	"sprites/";
+var dir_scripts =	"scripts/";
 var dir_songs =		"sounds/";
 var dir_sounds =	"sounds/";
 
