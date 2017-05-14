@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>game object tests</title>
+		<meta charset="UTF-8"></meta>
+		<meta name="author" content="Kitsu"></meta>
+		<meta name="description" content="Created July 23, 2015"></meta>
+		<link rel="stylesheet" href="css/gameengine.css" type="text/css"></link>
+		<link rel="stylesheet" href="css/qunit-1.18.0.css" type="text/css"></link>
+		<link rel="shortcut icon" href="../../metagirlicon.ico" type="image/x-icon"></link>
+		<script type="text/javascript" src="js/lib/modernizr-1.6.min.js"></script>
+		<script type="text/javascript" src="js/lib/howler.min.js"></script>
+		<script src="js/lib/qunit-1.18.0.js"></script>
+		<script src="js/lib/blanket.min.js"></script>
+		<script src="js/lib/jsmockito-1.0.3-minified.js"></script>
+		<script src="js/lib/jshamcrest.js"></script>
+		<script src="js/libraries.js" data-cover></script>
+		<script type="text/javascript" src="js/soundPlayer.js" data-cover></script>
+		<script type="text/javascript" src="js/renderer.js" data-cover></script>
+		<script type="text/javascript" src="js/inputMouse.js" data-cover></script>
+		<script type="text/javascript" src="js/gameobject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/playerObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/enemyObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/attackObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/tileMapObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/effectObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/itemObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/timerObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameObjectModules/scorePageObject.js" data-cover></script>
+		<script type="text/javascript" src="js/gameengine.js" data-cover></script>
+	</head>
+	<body>
+		<div style="text-align: center;">
+			
+			<canvas id="theCanvas" width="320px" height="240px" hidden="hidden">
+				Your browser doesn't support HTML5 canvas!
+			</canvas>
+			<p id="infobox" hidden="hidden">
+				Info box.
+			</p>
+			<div id="qunit"></div>
+			<div id="qunit-fixture"></div>
+			<script>
+				JsHamcrest.Integration.QUnit();
+				JsMockito.Integration.QUnit();
+			</script>
+			<script src="js/tests/librariesTests.js"></script>
+			<script src="js/tests/gameobjectHandlerTests.js"></script>
+			<script src="js/tests/gameobjectTests.js"></script>
+			<script src="js/tests/inputMouseTests.js"></script>
+			<script src="js/tests/rendererTests.js"></script>
+			<script src="js/tests/soundPlayerTests.js"></script>
+			<script src="js/tests/tilemapTests.js"></script>
+			<script src="js/tests/playerObjectTests.js"></script>
+			<script src="js/tests/enemyObjectTests.js"></script>
+			<script src="js/tests/gameengineTests.js"></script>
+		</div>
+	</body>
+</html>
