@@ -320,7 +320,7 @@ function ModulePlayer(obj)
 			platformerMovement();
 			
 			// Change animations depending on state.
-			//updateAnimation();
+			updateAnimation();
 		}
 		return true;
 	}
