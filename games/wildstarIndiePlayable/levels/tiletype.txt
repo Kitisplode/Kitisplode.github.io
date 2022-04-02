@@ -1,0 +1,109 @@
+// Unsolid tile
+0
+0
+0
+0
+0 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 55 60 54 62 46 38 30 61 53 45 37 29 
+// Solid block tile
+0 
+0
+0
+1
+1 2 3 4 23 24 25 26 27 28 31 32 33 34 35 36 39 40 41 42 43 44 48 49 50 51 52 56 57 
+// Solid 45degree slope /
+-1
+16
+0
+1
+5 47 56 
+// Solid 45degree slope \
+1
+0
+0
+1
+6 
+// Solid 45degree slope / under side
+-1
+0
+0
+1
+7 
+// Solid 45degree slope \ under side
+1
+-16
+0
+1
+8 
+// Solid 60degree slope / left side
+-2
+16
+0
+1
+9 
+// Solid 60degree slope / right side
+-2
+32
+0
+1
+10 
+// Solid 60degree slope \ left side
+2
+0
+0
+1
+11 
+// Solid 60degree slope \ right side
+2
+-16
+0
+1
+12 
+// Solid 60degree / underside
+-2
+0
+0
+1
+13 
+// Solid 60degree \ underside
+2
+16
+0
+1
+14 
+// Solid 30degree / bottomside
+-0.5
+16
+0
+1
+15 21 
+// Solid 30degree / topside
+-0.5
+8
+0
+1
+16 22 
+// Solid 30degree / underside
+-0.5
+0
+0
+1
+17 
+// Solid 30degree \ underside
+0.5
+-8
+0
+1
+18 
+// Solid 30degree \ topside
+0.5
+0
+0
+1
+19 58 
+// Solid 30degree \ bottomside
+0.5
+8
+0
+1
+20 59 
+// End of file

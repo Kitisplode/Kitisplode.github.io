@@ -1,0 +1,12 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl kirby
+Ns 1
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd dd489eac.png
