@@ -75,7 +75,8 @@ function ModulePlayer(obj)
 	{
 		thisObject.spriteIndex = -1;
 		
-		model = new kitsuModel("models/kit2016_03.json", thisObject.app.modelLoader, three, false, modelInit);
+		//model = new kitsuModel("models/kit2016_03.json", thisObject.app.modelLoader, three, false, modelInit);
+		model = new kitsuModel("models/animtest2.json", thisObject.app.modelLoader, three, false, modelInit);
 			
 		three.camera.position.x = thisObject.position.x;
 		three.camera.position.y = thisObject.position.y + playerConstants.yOffset + 4;
