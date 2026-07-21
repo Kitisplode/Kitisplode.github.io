@@ -11,7 +11,10 @@
 body
 {
 	background-color: #000;
-	
+}
+
+img
+{
 	image-rendering:optimizeSpeed;             /* Legal fallback                 */
 	image-rendering:-moz-crisp-edges;          /* Firefox                        */
 	image-rendering:-o-crisp-edges;            /* Opera                          */
