@@ -11,6 +11,14 @@
 body
 {
 	background-color: #000;
+	
+	image-rendering:optimizeSpeed;             /* Legal fallback                 */
+	image-rendering:-moz-crisp-edges;          /* Firefox                        */
+	image-rendering:-o-crisp-edges;            /* Opera                          */
+	image-rendering:-webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering:optimize-contrast;         /* CSS3 Proposed                  */
+	image-rendering:pixelated;
+	-ms-interpolation-mode:nearest-neighbor;   /* IE8+   
 }
 
 .titlebar
