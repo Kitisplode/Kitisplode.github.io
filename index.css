@@ -133,7 +133,7 @@ th img
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
+  /*width: 100%;*/
   max-width: 224px;
 }
 
