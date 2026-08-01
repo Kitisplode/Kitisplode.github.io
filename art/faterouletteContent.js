@@ -157,5 +157,5 @@ var servants = [ { name: "Mash Kyrielight",					id:"1", class:0 },
 	{ name: "EMIYA (Alter)", 								id:"157", class:2},
 	{ name: "Hessian Lobo", 								id:"158", class:9},
 	{ name: "Yan Qing", 									id:"159", class:6},
-	{ name: "Arthur Pendragon", 							id:"160", class:1},
+	{ name: "Arthur Pendragon", 							id:"160", class:1}
 ];
