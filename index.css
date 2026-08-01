@@ -24,7 +24,7 @@ body
 .titlebar
 {
 	width:100%;
-	/*position: fixed;*/
+	position: fixed;
 	top: 0;
 	left:0;
 	background-color: #aaa;
@@ -97,7 +97,7 @@ body
 .main_body
 {
 	color:#fff;
-	/*margin-top: 250px;*/
+	margin-top: 250px;
 	max-width: 750px;
 	display: block;
 	margin-left: auto;
