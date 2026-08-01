@@ -81,4 +81,4 @@ function idToImageSource(id)
 	return "images/fateroulette/" + id + ".png";
 }
 
-generateFateRouletteContent(document.querySelector("fateroulette"), servants);
+generateFateRouletteContent(document.getElementById("fateroulette"), servants);
