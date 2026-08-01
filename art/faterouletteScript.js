@@ -14,6 +14,35 @@ var classes = [ "Shielder",	"Saber",
 	"Beast"
 ];
 
+var sources = [
+	"Fate/Grand Order",
+	"Fate/Stay Night",
+	"Fate/Hollow Ataraxia",
+	"Fate/Grand Order NPC",
+	"Fate/Grand Order Arcade",
+	"Fate/Extra",
+	"Fate/Extra CCC",
+	"Fate/Extra CCC: Foxtail",
+	"Fate/Apocrypha",
+	"Fate/Extella: Umbral Star",
+	"Fate/Extella Link",
+	"Fate/Strange Fake",
+	"Fate/Zero",
+	"Fate/Kaleid Liner Prisma Illya",
+	"Fate/Prototype",
+	"Fate/Lost Einherjar",
+	"Fate/Requiem",
+	"Fate/Samurai Remnant",
+	"Fate/Redline",
+	"FGO Learn With Manga",
+	"Koha Ace"
+	"Witch of the Holy Night",
+	"Garden of Sinners",
+	"Tsukihime",
+	"Capsule Servant",
+	"Other"
+];
+
 
 function generateFateRouletteContent(parent, data)
 {
