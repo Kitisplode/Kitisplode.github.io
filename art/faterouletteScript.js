@@ -2,7 +2,7 @@ var classes = [ "Shielder",	"Saber",
 	"Archer",
 	"Lancer",
 	"Rider",
-	"Caster"
+	"Caster",
 	"Assassin",
 	"Berserker",
 	"Ruler",
