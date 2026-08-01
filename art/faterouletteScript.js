@@ -29,6 +29,7 @@ function generateFateRouletteContent(parent, data)
 		image.setAttribute("src", idToImageSource(thing.id));
 		image.setAttribute("onerror", "this.onerror=null; this.src=idToImageSource(\"template\");");
 		image.setAttribute("class", classes[thing.class] + " " + thing.tags);
+		image.setAttribute("id", "fate-" + thing.id);
 		element.appendChild(image);
 	}
 }
