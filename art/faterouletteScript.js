@@ -1,4 +1,4 @@
-var servants = [ { name: "Mash Kyrielight",			id:"1", class:0 },
+var servants = [ { name: "Mash Kyrielight",		id:"1", class:0 },
 	{ name: "Altria Pendragon",					id:"2", class:1},
 	{ name: "Altria Pendragon (Alter)",			id:"3", class:1},
 	{ name: "Altria Pendragon (Lily)",			id:"4", class:1},
@@ -62,11 +62,14 @@ var servants = [ { name: "Mash Kyrielight",			id:"1", class:0 },
 
 function generateFateRouletteContent(parent, data)
 {
+	console.log("script run");
 	for (var thing of data)
 	{
-		var element = document.createElement("div");
+		console.log(thing.name);
+		console.log(idToImageSource(thing.id));
+		var element = document.createElement("DIV");
 		parent.appendChild(element);
-		var image = document.createElement("img");
+		var image = document.createElement("IMG");
 		image.setAttribute("alt", thing.name);
 		image.setAttribute("src", idToImageSource(thing.id));
 		element.appendChild(image);
