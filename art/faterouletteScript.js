@@ -27,6 +27,7 @@ function generateFateRouletteContent(parent, data)
 		var image = document.createElement("IMG");
 		image.setAttribute("alt", thing.name);
 		image.setAttribute("src", idToImageSource(thing.id));
+		image.setAttribute("onerror", "this.onerror=null; this.src=idToImageSource(\"template\");");
 		element.appendChild(image);
 	}
 }
