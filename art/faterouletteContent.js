@@ -37,7 +37,7 @@ var servants = [ { name: "Mash Kyrielight",					id:"1", class:0,	tags:"mash fgo"
 	{ name: "Zhuge Liang / Lord El-Melloi II",				id:"37", class:5,	tags:"fgo zero casefiles"},
 	{ name: "Cu Chulainn",									id:"38", class:5,	tags:"fgo"},
 	{ name: "Sasaki Kojiro",								id:"39", class:6,	tags:"fgo fsn"},
-	{ name: "Hassan of the Cursed Arm",						id:"40", class:6,	tags:"fgo fsn"},
+	{ name: "Hassan of the Cursed Arm",						id:"40", class:6,	tags:"fgo fsn hassan"},
 	{ name: "Stheno",										id:"41", class:6,	tags:"fgo"},
 	{ name: "Jing Ke",										id:"42", class:6,	tags:"fgo"},
 	{ name: "Charles-Henri Sanson",							id:"43", class:6,	tags:"fgo"},
@@ -470,8 +470,8 @@ var servants = [ { name: "Mash Kyrielight",					id:"1", class:0,	tags:"mash fgo"
 	{ name: "Urdr",											id:"470", class:2},
 	{ name: "Ascalaphus",									id:"471", class:11},
 	{ name: "Gray Lily",									id:"472", class:1},
-	{ name: "Gray Lily",									id:"473", class:3}
-	
+	{ name: "Gray Lily",									id:"473", class:3},
+	{ name: "Hassan-i-Sabbah / Azrael",						id:"474", class:6,		tags:"fgo hassan"}
 ];
 
 

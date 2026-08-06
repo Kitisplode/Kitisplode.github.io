@@ -23,13 +23,14 @@ function generateFateRouletteContent(parent, data)
 		console.log(thing.name);
 		console.log(idToImageSource(thing.id));
 		var element = document.createElement("DIV");
+		element.setAttribute("class", classes[thing.class] + " " + thing.tags);
+		element.setAttribute("id", "fate-" + thing.id);
+		
 		parent.appendChild(element);
 		var image = document.createElement("IMG");
 		image.setAttribute("alt", thing.name);
 		image.setAttribute("src", idToImageSource(thing.id));
 		image.setAttribute("onerror", "this.onerror=null; this.src=idToImageSource(\"template\");");
-		image.setAttribute("class", classes[thing.class] + " " + thing.tags);
-		image.setAttribute("id", "fate-" + thing.id);
 		element.appendChild(image);
 	}
 }
